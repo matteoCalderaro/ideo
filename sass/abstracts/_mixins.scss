@@ -1,0 +1,80 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800]   is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+le media queries dipendono dal font-size del browser (default 16px) e non dal root font-size (es. 62.5%) 
+1 em = 16px 
+
+ORDER TO WRITE MEDIA QUERIES:
+Base + typography > general layout + grid > page layout > components
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    // 600/16 = 37.5
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-port {
+    // 900/16 = 56.25
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    // 1200/16 = 75
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == big-desktop {
+    // 1800/16 = 112.5
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
+
+// BORDER linear-gradient
+
+@mixin border-gradient($direction) {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient($direction, $color-primary-light, $color-primary-dark)
+      border-box;
+  border-radius: $border-radius-standard;
+  border: 0.2rem solid transparent;
+}
+
+@mixin background-gradient() {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(211, 246, 252, 0.2),
+    $color-primary-light
+  );
+}

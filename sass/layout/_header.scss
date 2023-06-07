@@ -1,0 +1,37 @@
+.header {
+  height: 100vh;
+  background-image: radial-gradient(
+      circle,
+      rgba($color-primary-dark, 0.8),
+      rgba($color-primary, 0.2)
+    ),
+    url(../img/hero-small-ideo4.png);
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+
+  &__logo-box {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+  }
+
+  &__logo {
+    height: 9rem;
+  }
+  &__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+.membership {
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}

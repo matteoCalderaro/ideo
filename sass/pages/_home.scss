@@ -1,0 +1,110 @@
+.section-about {
+  //background-color: $color-grey-light-1;
+  padding: 13rem 0;
+  // margin-top: -20vh;
+  @include respond(tab-port) {
+    padding: 10rem 0 20rem 0;
+  }
+}
+.section-features {
+  @include background-gradient;
+  padding: 13rem 0;
+}
+
+.section-stories {
+  padding: 13rem 0 15rem 0;
+  position: relative;
+  //margin-top: -8rem;
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+}
+
+.section-book {
+  padding: 10rem 0;
+  //max-width: 114rem;
+  // margin: 0 auto;
+  @include background-gradient;
+
+  @include respond(tab-port) {
+    padding: 10rem 3rem;
+  }
+}
+
+.book {
+  max-width: 75%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  overflow: hidden;
+  border-radius: $border-radius-standard;
+  border: 1px solid $color-primary-dark;
+  //border: 0.2rem solid $color-primary-dark;
+  //border-radius: $border-radius-standard;
+  //@include border-gradient(to left);
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+}
+.book__form {
+  padding: 2rem;
+  //@include background-gradient;
+}
+.book__img {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(211, 246, 252, 0.2),
+      rgba(34, 211, 238, 0.61)
+    ),
+    url(../img/book.jpg);
+  background-size: cover;
+  background-position: center;
+  @include respond(phone) {
+    grid-row: 1;
+    background-position: top;
+    height: 25rem;
+  }
+}
+
+/*.book {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9),
+      rgba($color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url(../img/nat-10.jpg);
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+
+  @include respond(tab-land) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.9),
+        rgba($color-white, 0.9) 65%,
+        transparent 65%
+      ),
+      url(../img/nat-10.jpg);
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-white, 0.9),
+        rgba($color-white, 0.9) 100%
+      ),
+      url(../img/nat-10.jpg);
+  }
+  &__form {
+    width: 50%;
+    padding: 6rem;
+    @include respond(tab-land) {
+      width: 65%;
+    }
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+}*/

@@ -1,0 +1,112 @@
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-grey-dark;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  //margin-bottom: 6rem;
+
+  /* to avoid the shake effect after the transition */
+  backface-visibility: hidden;
+  font-style: italic;
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 2.2rem;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
+
+    /***************************/
+    /* APPLYING ANIMATIONS */
+    /***************************/
+
+    /* REQUIRED DECLARATIONS (ONLY NAME AND DURATION) */
+    /* animation-name: moveInLeft; */
+    /* animation-duration: 1s; */
+    /* animation-timing-function: ease-out; */
+
+    /* SHORTCUT */
+    animation: moveInLeft 1s ease-out;
+
+    /* OPTIONAL DECLARATIONS */
+    /* animation-delay: 3s; */
+    /* animation-iteration-count: 3; */
+  }
+  &--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+
+    @include respond(phone) {
+      letter-spacing: 0.85rem;
+    }
+
+    animation: moveInRight 1s ease-out;
+  }
+  &--middle {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    margin-top: -1rem;
+
+    @include respond(phone) {
+      letter-spacing: 0.85rem;
+    }
+
+    animation: moveInRight 1s ease-out;
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  //text-transform: uppercase;
+  font-weight: 500;
+  font-style: italic;
+  //display: inline-block;
+  //text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  background-image: linear-gradient(
+    to right,
+    $color-primary-dark,
+    $color-primary-dark
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+
+  @include respond(tab-port) {
+    font-size: 3rem;
+  }
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+  }
+}
+
+.heading-tertiary,
+.heading-4 {
+  font-size: $default-font-size;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.paragraph {
+  font-size: $default-font-size;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
