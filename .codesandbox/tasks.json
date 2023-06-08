@@ -1,0 +1,56 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "npm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "watch:sass": {
+      "name": "watch:sass",
+      "command": "npm run watch:sass",
+      "runAtStart": false
+    },
+    "devserver": {
+      "name": "devserver",
+      "command": "npm run devserver",
+      "runAtStart": false
+    },
+    "start": {
+      "name": "start",
+      "command": "npm run start",
+      "runAtStart": true,
+      "preview": {
+        "port": 1234
+      }
+    },
+    "compile:sass": {
+      "name": "compile:sass",
+      "command": "npm run compile:sass",
+      "runAtStart": false
+    },
+    "concat:css": {
+      "name": "concat:css",
+      "command": "npm run concat:css",
+      "runAtStart": false
+    },
+    "prefix:css": {
+      "name": "prefix:css",
+      "command": "npm run prefix:css",
+      "runAtStart": false
+    },
+    "compress:css": {
+      "name": "compress:css",
+      "command": "npm run compress:css",
+      "runAtStart": false
+    },
+    "build:css": {
+      "name": "build:css",
+      "command": "npm run build:css",
+      "runAtStart": false
+    }
+  }
+}
