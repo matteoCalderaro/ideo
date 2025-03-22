@@ -1,0 +1,38 @@
+[
+    {
+        "id":1,
+        "img": "gim-1-400.jpg",
+        "title": "Gara 1",
+        "text": "Lorem ipsum dolor sit amet, cons adipiscing elit."
+    },
+    {
+        "id": 2,
+        "img": "gim-2-400.jpg",
+        "title": "Gara 2",
+        "text": "Lorem ipsum dolor sit amet, cons adipiscing elit."
+    },
+    {
+        "id": 3,
+        "img": "gim-3-400.jpg",
+        "title": "Gara 3",
+        "text": "Lorem ipsum dolor sit amet, cons adipiscing elit."
+    },
+    {
+        "id": 4,
+        "img": "gim-1-400.jpg",
+        "title": "Gara 4",
+        "text": "Lorem ipsum dolor sit amet, cons adipiscing elit."
+    },
+    {
+        "id": 5,
+        "img": "gim-2-400.jpg",
+        "title": "Gara 5",
+        "text": "Lorem ipsum dolor sit amet, cons adipiscing elit."
+    },
+    {
+        "id": 6,
+        "img": "gim-3-400.jpg",
+        "title": "Gara 6",
+        "text": "Lorem ipsum dolor sit amet, cons adipiscing elit."
+    }
+]
