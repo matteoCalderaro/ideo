@@ -1,706 +1,841 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    
+      <!-- Glide.js Core CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.core.min.css">
+      
 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"  />
+    
     <!--comment after building -->
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-carousel.css" />
     <!--<link rel="shortcut icon" type="image/png" href="img/favicon.png" />-->
-
+    
     <!-- ICONS -->
     <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
     <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-
+    
     <script defer src="script.js"></script>
-
+    
     <title>Ginnastica Ideò | Ginnastica Ritmica & Danza Classica</title>
-  </head>
-  <body>
+</head>
+<body>
     <div class="navigation">
-      <input class="navigation__checkbox" type="checkbox" id="navi-toggle" />
-      <label class="navigation__button" for="navi-toggle">
-        <span class="navigation__icon">&nbsp;</span>
-      </label>
-      <div class="navigation__background">&nbsp;</div>
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#section-about" class="navigation__link"
-              ><span>01</span>ritmo o classe ...</a
-            >
-          </li>
-          <li class="navigation__item">
-            <a href="#section-features" class="navigation__link"
-              ><span>02</span>perchè noi ...</a
-            >
-          </li>
-          <li class="navigation__item">
-            <a href="#section-stories" class="navigation__link"
-              ><span>03</span>chi siamo ...</a
-            >
-          </li>
-          <!-- <li class="navigation__item">
-            <a href="#section-book" class="navigation__link"
-              ><span>04</span>contattaci ...</a
-            >
-          </li> -->
-          <li class="navigation__item">
-            <a
-              href="#section-book"
-              class="btn btn--white btn--animated bo"
-              style="
-                bottom: 0 !important;
-                position: relative !important;
-                margin-top: 4rem;
-              "
-              >unisciti a noi</a
-            >
-          </li>
-          <!-- <li class="navigation__item">
-            <a
-              class="footer-link"
-              href="https://www.instagram.com/a.s.d.ginnastica_ideo/?hl=it"
-              ><ion-icon
-                class="first-col__social-icon"
-                name="logo-instagram"
-              ></ion-icon
-            ></a>
-
-            <a
-              class="footer-link"
-              href="https://www.facebook.com/asdginnasticaideo/"
-              ><ion-icon
-                class="first-col__social-icon"
-                name="logo-facebook"
-              ></ion-icon
-            ></a>
-          </li> -->
-
-          <!--<li class="navigation__item">
-            <a href="#section-book" class="navigation__link"
-              ><span>05</span>Book now</a
-            >
-          </li> -->
-        </ul>
-      </nav>
+        <input class="navigation__checkbox" type="checkbox" id="navi-toggle" />
+        <label class="navigation__button" for="navi-toggle">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="#section-about" class="navigation__link"
+                    ><span>01</span>ritmo o classe ...</a
+                    >
+                </li>
+                <li class="navigation__item">
+                    <a href="#section-features" class="navigation__link"
+                    ><span>02</span>perchè noi ...</a
+                    >
+                </li>
+                <li class="navigation__item">
+                    <a href="#section-media" class="navigation__link"
+                    ><span>03</span>media ...</a
+                    >
+                </li>
+                <!-- <li class="navigation__item">
+                    <a href="#section-book" class="navigation__link"
+                    ><span>04</span>contattaci ...</a
+                    >
+                </li> -->
+                <li class="navigation__item">
+                    <a
+                    href="#section-book"
+                    class="btn btn--white btn--animated bo"
+                    style="
+                    bottom: 0 !important;
+                    position: relative !important;
+                    margin-top: 4rem;
+                    "
+                    >unisciti a noi</a
+                    >
+                </li>
+                <!-- <li class="navigation__item">
+                    <a
+                    class="footer-link"
+                    href="https://www.instagram.com/a.s.d.ginnastica_ideo/?hl=it"
+                    ><ion-icon
+                    class="first-col__social-icon"
+                    name="logo-instagram"
+                    ></ion-icon
+                    ></a>
+                    
+                    <a
+                    class="footer-link"
+                    href="https://www.facebook.com/asdginnasticaideo/"
+                    ><ion-icon
+                    class="first-col__social-icon"
+                    name="logo-facebook"
+                    ></ion-icon
+                    ></a>
+                </li> -->
+                
+                <!--<li class="navigation__item">
+                    <a href="#section-book" class="navigation__link"
+                    ><span>05</span>Book now</a
+                    >
+                </li> -->
+            </ul>
+        </nav>
     </div>
-
+    
     <header class="header">
-      <div class="header__logo-box">
-        <img src="img/logo-ideo-color.png" alt="Logo" class="header__logo" />
-      </div>
-      <div class="header__text-box">
-        <h1 class="heading-primary">
-          <span class="heading-primary--main">ginnastica</span>
-          <span class="heading-primary--middle">ritmica</span>
-          <span
-            class="heading-primary--sub"
-            style="margin-bottom: 2rem; font-size: 2.5rem"
-            >&</span
-          >
-          <span class="heading-primary--middle" style="letter-spacing: 1rem"
-            >danza classica</span
-          >
-          <span
-            class="heading-primary--sub"
-            style="
-              letter-spacing: 5.75px;
-              margin-bottom: 5rem;
-              font-size: 1.5rem;
-            "
-            >the art of movement</span
-          >
-        </h1>
-      </div>
-      <div class="membership">
-        <div class="membership__1">
-          <img
-            src="img/AICS-blue.png"
-            alt="Logo"
-            class="header__logo"
-            style="height: 4rem"
-          />
+        <div class="header__logo-box">
+            <img src="img/logo-ideo-color.png" alt="Logo" class="header__logo" />
         </div>
-        <div class="membership__1">
-          <img
-            src="img/FGI.png"
-            alt="Logo"
-            class="header__logo"
-            style="height: 5rem"
-          />
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">ginnastica</span>
+                <span class="heading-primary--middle">ritmica</span>
+                <span
+                class="heading-primary--sub"
+                style="margin-bottom: 2rem; font-size: 2.5rem"
+                >&</span
+                >
+                <span class="heading-primary--middle" style="letter-spacing: 1rem"
+                >danza classica</span
+                >
+                <span
+                class="heading-primary--sub"
+                style="
+                letter-spacing: 5.75px;
+                margin-bottom: 5rem;
+                font-size: 1.5rem;
+                "
+                >the art of movement</span
+                >
+            </h1>
         </div>
-      </div>
-      <a href="#section-book" class="btn btn--white btn--animated bo"
+        <div class="membership">
+            <div class="membership__1">
+                <img
+                src="img/AICS-blue.png"
+                alt="Logo"
+                class="header__logo"
+                style="height: 4rem"
+                />
+            </div>
+            <div class="membership__1">
+                <img
+                src="img/FGI.png"
+                alt="Logo"
+                class="header__logo"
+                style="height: 5rem"
+                />
+            </div>
+        </div>
+        <a href="#section-book" class="btn btn--white btn--animated bo"
         >unisciti a noi</a
-      >
+        >
     </header>
-
+    
     <main>
-      <section class="section-about" id="section-about">
-        <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary" style="text-transform: uppercase">
-            RITmica <span style="text-transform: lowercase">o</span> CLASSICA
-          </h2>
-          <h2 class="heading-secondary" style="text-transform: lowercase">
-            QUESTIONE DI STILE...
-          </h2>
-        </div>
-        <div class="row">
-          <div class="col-1-of-2">
-            <h3 class="heading-tertiary u-margin-bottom-small">
-              GINNASTICA RITMICA
-            </h3>
-            <p class="paragraph">
-              Sport elegante e completo, disciplina olimpica di gruppo o
-              individuale. Insegna a focalizzare l'attenzione sul proprio corpo,
-              in armonia con la musica e con gli attrezzi. Una palestra di
-              coordinazione, concentrazione, disciplina che farà anche di te una
-              Farfalla della Nazionale italiana! 🦋
-            </p>
-            <h3 class="heading-tertiary u-margin-bottom-small">
-              DANZA CLASSICA
-            </h3>
-            <p class="paragraph">
-              Oltre ad essere un'arte è un sogno per tante bambine/i e genitori.
-              Grazia, leggerezza e bellezza, potenza e portamento. Ti aiuteremo
-              a conquistarle con la pratica e studio della danza classica,
-              utilissima allo sviluppo tanto fisico come psicologico.<br />
-              Tutto questo e molto di più... 💜
-            </p>
-            <!--<a href="#" class="btn-text">Learn more &rarr;</a>-->
-          </div>
-          <div class="col-1-of-2">
-            <div class="composition">
-              <!-- resolution and density switching -->
-              <!-- w = width descriptor (image width in pixel)-->
-              <!-- vw = approximate image width in viewport unit for different breakpoints -->
-              <!-- 300px = default size displayed (box width) outside breakpoints-->
-              <!-- srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
-              srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
-              srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" -->
-              <img
-                sizes="(max-width:56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
-                alt="Photo 1"
-                class="composition__photo composition__photo--p1"
-                src="img/gim-3.jpg"
-              />
-              <img
-                sizes="(max-width:56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
-                alt="Photo 2"
-                class="composition__photo composition__photo--p2"
-                src="img/gim-2.jpg"
-              />
-              <img
-                sizes="(max-width:56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
-                alt="Photo 3"
-                class="composition__photo composition__photo--p3"
-                src="img/gim-1.jpg"
-              />
-              <!--
-              <img
-                src="img/nat-1-large.jpg"
-                alt="Photo 1"
-                class="composition__photo composition__photo--p1"
-              />
-              <img
-                src="img/nat-2-large.jpg"
-                alt="Photo 2"
-                class="composition__photo composition__photo--p2"
-              />
-              <img
-                src="img/nat-3-large.jpg"
-                alt="Photo 3"
-                class="composition__photo composition__photo--p3"
-              />
-              -->
+        <section class="section-about" id="section-about">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary" style="text-transform: uppercase">
+                    RITmica <span style="text-transform: lowercase">o</span> CLASSICA
+                </h2>
+                <h2 class="heading-secondary" style="text-transform: lowercase">
+                    QUESTIONE DI STILE...
+                </h2>
             </div>
-          </div>
-        </div>
-      </section>
-      <!--FEATURES - NEW SECTION -->
-      <section class="section-features" id="section-features">
-        <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">perchè noi ...</h2>
-        </div>
-        <div class="features-box">
-          <div class="feature-wrapper">
-            <div class="feature">
-              <svg class="feature__icon">
-                <use xlink:href="img/sprite.svg#icon-heart"></use>
-              </svg>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                        GINNASTICA RITMICA
+                    </h3>
+                    <p class="paragraph">
+                        Sport elegante e completo, disciplina olimpica di gruppo o
+                        individuale. Insegna a focalizzare l'attenzione sul proprio corpo,
+                        in armonia con la musica e con gli attrezzi. Una palestra di
+                        coordinazione, concentrazione, disciplina che farà anche di te una
+                        Farfalla della Nazionale italiana! 🦋
+                    </p>
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                        DANZA CLASSICA
+                    </h3>
+                    <p class="paragraph">
+                        Oltre ad essere un'arte è un sogno per tante bambine/i e genitori.
+                        Grazia, leggerezza e bellezza, potenza e portamento. Ti aiuteremo
+                        a conquistarle con la pratica e studio della danza classica,
+                        utilissima allo sviluppo tanto fisico come psicologico.<br />
+                        Tutto questo e molto di più... 💜
+                    </p>
+                    <!--<a href="#" class="btn-text">Learn more &rarr;</a>-->
+                </div>
+                <div class="col-1-of-2">
+                    <div class="composition">
+                        <!-- resolution and density switching -->
+                        <!-- w = width descriptor (image width in pixel)-->
+                        <!-- vw = approximate image width in viewport unit for different breakpoints -->
+                        <!-- 300px = default size displayed (box width) outside breakpoints-->
+                        <!-- srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                        srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                        srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w" -->
+                        <img
+                        sizes="(max-width:56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                        alt="Photo 1"
+                        class="composition__photo composition__photo--p1"
+                        src="img/collage_1.jpg"
+                        />
+                        <img
+                        sizes="(max-width:56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                        alt="Photo 2"
+                        class="composition__photo composition__photo--p2"
+                        src="img/collage_2.jpg"
+                        />
+                        <img
+                        sizes="(max-width:56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                        alt="Photo 3"
+                        class="composition__photo composition__photo--p3"
+                        src="img/collage_3.jpg"
+                        />
+                        <!--
+                        <img
+                        src="img/nat-1-large.jpg"
+                        alt="Photo 1"
+                        class="composition__photo composition__photo--p1"
+                        />
+                        <img
+                        src="img/nat-2-large.jpg"
+                        alt="Photo 2"
+                        class="composition__photo composition__photo--p2"
+                        />
+                        <img
+                        src="img/nat-3-large.jpg"
+                        alt="Photo 3"
+                        class="composition__photo composition__photo--p3"
+                        />
+                        -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FEATURES - NEW SECTION -->
+        <section class="section-features" id="section-features">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">perchè noi ...</h2>
+            </div>
+            <div class="features-box">
+                <div class="feature-wrapper">
+                    <div class="feature">
+                        <svg class="feature__icon">
+                            <use xlink:href="img/sprite.svg#icon-heart"></use>
+                        </svg>
+                        
+                        <h4 class="heading-4 heading-4--dark">passione</h4>
+                        <p class="feature__test">
+                            E' quella che mettiamo e che cerchiamo di trasmettere ad ogni
+                            lezione. Crediamo in ciò che facciamo e lo facciamo al meglio!
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-wrapper">
+                    <div class="feature">
+                        <svg class="feature__icon">
+                            <use xlink:href="img/sprite.svg#icon-trophy"></use>
+                        </svg>
+                        <h4 class="heading-4 heading-4--dark">grinta</h4>
+                        <p class="feature__test">
+                            E' quella che tiriamo fuori nelle sfide di tutti i giorni, una
+                            sana competizione. Fisseremo traguardi che ci impegneremo a
+                            raggiungere!
+                        </p>
+                    </div>
+                </div>
+                <div class="feature-wrapper">
+                    <div class="feature">
+                        <svg class="feature__icon">
+                            <use xlink:href="img/sprite.svg#icon-happy"></use>
+                        </svg>
+                        <h4 class="heading-4 heading-4--dark">allegria</h4>
+                        <p class="feature__test">
+                            E' quella che ti assicuriamo. Faremo gruppo, condivideremo e
+                            impareremo aiutandoci gli uni con gli altri. Il divertimento è
+                            assicurato!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- <section class="section-stories" id="section-stories">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary">chi siamo ...</h2>
+            </div>
+            <div class="row">
+                <div class="story story-1">
+                    <figure class="story__shape">
+                        <img
+                        srcset="img/trifonova.jpeg 500w, img/trifonova.jpeg 1000w"
+                        sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 225px"
+                        alt="Person on a tour"
+                        class="story__img"
+                        src="img/trifonova.jpeg"
+                        />
+                        <figcaption class="story__caption">Trifonova</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">la ritmica</h3>
+                        <p class="story__paragraph">
+                            <span class="story__quotation--open"></span>Ho iniziato con la
+                            danza ritmica da bambina e da allora non ho più smesso. Le
+                            emozioni che provavo allora le rivivo oggi tramettendo ai
+                            ragazzi la mia passione. Quando i miei piedi iniziano a danzare
+                            e i muscoli ne assecondano i movimenti, il mio corpo prende il
+                            volo ...<span class="story__quotation--close"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="story story-2">
+                    <figure class="story__shape">
+                        <img
+                        srcset="img/caroline.jpeg 500w, img/caroline.jpeg 1000w"
+                        sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 225px"
+                        alt="Person on a tour"
+                        class="story__img"
+                        src="img/caroline.jpeg"
+                        />
+                        <figcaption class="story__caption">Caroline</figcaption>
+                    </figure>
+                    <div class="story__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">
+                            la classica
+                        </h3>
+                        <p class="story__paragraph">
+                            <span class="story__quotation--open"></span>La danza è pura
+                            forma artistica perché esprime emozioni, stati d’animo, racconta
+                            storie, l’amore per se stessi e gli altri, per la vita, per i
+                            sogni e i desideri. Chi danza esprime tutto se stesso, perché
+                            non è solo il corpo a danzare, bensì anche la mente, l’anima, il
+                            cuore ...<span class="story__quotation--close"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        
+        <div class="divider">ciao</div>
 
-              <h4 class="heading-4 heading-4--dark">passione</h4>
-              <p class="feature__test">
-                E' quella che mettiamo e che cerchiamo di trasmettere ad ogni
-                lezione. Crediamo in ciò che facciamo e lo facciamo al meglio!
-              </p>
-            </div>
-          </div>
-          <div class="feature-wrapper">
-            <div class="feature">
-              <svg class="feature__icon">
-                <use xlink:href="img/sprite.svg#icon-trophy"></use>
-              </svg>
-              <h4 class="heading-4 heading-4--dark">grinta</h4>
-              <p class="feature__test">
-                E' quella che tiriamo fuori nelle sfide di tutti i giorni, una
-                sana competizione. Fisseremo traguardi che ci impegneremo a
-                raggiungere!
-              </p>
-            </div>
-          </div>
-          <div class="feature-wrapper">
-            <div class="feature">
-              <svg class="feature__icon">
-                <use xlink:href="img/sprite.svg#icon-happy"></use>
-              </svg>
-              <h4 class="heading-4 heading-4--dark">allegria</h4>
-              <p class="feature__test">
-                E' quella che ti assicuriamo. Faremo gruppo, condivideremo e
-                impareremo aiutandoci gli uni con gli altri. Il divertimento è
-                assicurato!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        <section class="section-media" id="section-media">
 
-      <section class="section-stories" id="section-stories">
-        <!-- <div class="bg-video">
-          <video class="bg-video__content" autoplay muted loop>
-            <source src="img/video.mp4" type="video/mp4" />
-            <source src="img/video.webm" type="video/webm" />
-            Your browser is not supported!
-          </video>
-        </div> -->
-        <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary">chi siamo ...</h2>
-        </div>
-        <div class="row">
-          <div class="story story-1">
-            <figure class="story__shape">
-              <img
-                srcset="img/trifonova.jpeg 500w, img/trifonova.jpeg 1000w"
-                sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 225px"
-                alt="Person on a tour"
-                class="story__img"
-                src="img/trifonova.jpeg"
-              />
-              <figcaption class="story__caption">Trifonova</figcaption>
-            </figure>
-            <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">la ritmica</h3>
-              <!-- <p class="story__paragraph">
-                <span class="story__quotation--open"></span>La bacchetta del
-                nastro taglia l'aria creando disegni meravigliosi, i miei piedi
-                iniziano a danzare e, mentre i miei muscoli assecondano i miei
-                movimenti, il mio corpo di ragazza normale si trasforma in
-                quello di un cigno ...<span
-                  class="story__quotation--close"
-                ></span>
-              </p> -->
-              <p class="story__paragraph">
-                <span class="story__quotation--open"></span>Ho iniziato con la
-                danza ritmica da bambina e da allora non ho più smesso. Le
-                emozioni che provavo allora le rivivo oggi tramettendo ai
-                ragazzi la mia passione. Quando i miei piedi iniziano a danzare
-                e i muscoli ne assecondano i movimenti, il mio corpo prende il
-                volo ...<span class="story__quotation--close"></span>
-              </p>
+            
+            <div class="video-container mb-5">
+
+                <div class="card">
+                    <video id="myVideo" controls muted loop class="video-player">
+                        <source src="img/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="card-body py-5">
+                        <h2 class="card-title">Artistic Dance Performance</h2>
+                        <p class="card-text feature__test">A captivating 30-second artistic dance performance showcasing fluid movements and creative expression.</p>
+                    </div>
+                </div>
+        
             </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="story story-2">
-            <figure class="story__shape">
-              <img
-                srcset="img/caroline.jpeg 500w, img/caroline.jpeg 1000w"
-                sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 225px"
-                alt="Person on a tour"
-                class="story__img"
-                src="img/caroline.jpeg"
-              />
-              <figcaption class="story__caption">Caroline</figcaption>
-            </figure>
-            <div class="story__text">
-              <h3 class="heading-tertiary u-margin-bottom-small">
-                la classica
-              </h3>
-              <p class="story__paragraph">
-                <span class="story__quotation--open"></span>La danza è pura
-                forma artistica perché esprime emozioni, stati d’animo, racconta
-                storie, l’amore per se stessi e gli altri, per la vita, per i
-                sogni e i desideri. Chi danza esprime tutto se stesso, perché
-                non è solo il corpo a danzare, bensì anche la mente, l’anima, il
-                cuore ...<span class="story__quotation--close"></span>
-              </p>
+
+            <div class="divider">ciao</div>
+            
+        
+            <div class="carousel-container">
+                
+                
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides" id="carousel-slides">
+                            <!-- Slides will be dynamically inserted here -->
+                        </ul>
+                    </div>
+                    
+                    <!-- Navigation controls -->
+                    <div class="navigation-controls">
+                        <div class="nav-wrapper">
+                            <!-- Left arrow -->
+                            <div class="glide__arrows" data-glide-el="controls">
+                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+                            </div>
+                            
+                            <!-- Pagination bullets -->
+                            <div class="glide__bullets" data-glide-el="controls[nav]" id="carousel-bullets">
+                                <!-- Bullets will be dynamically inserted here -->
+                            </div>
+                            
+                            <!-- Right arrow -->
+                            <div class="glide__arrows" data-glide-el="controls">
+                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <!--<div class="u-center-text u-margin-top-huge">
-          <a href="#" class="btn-text">Read all stories &rarr;</a>
-        </div>-->
-      </section>
-      <section class="section-book" id="section-book">
-        <div class="u-center-text u-margin-bottom-big">
-          <h2 class="heading-secondary" style="text-transform: uppercase">
-            voglio saperne di più !
-          </h2>
-        </div>
-        <div style="max-width: 114rem; margin: 0 auto">
-          <div class="book">
-            <div class="book__form">
-              <form action="#" class="form">
-                <div class="u-margin-bottom-medium">
-                  <h2 class="heading-secondary">Bastano due clic ...</h2>
-                </div>
-                <div class="form__group">
-                  <input
-                    type="text"
-                    class="form__input"
-                    placeholder="Full Name"
-                    id="name"
-                    required
-                  />
-                  <label for="name" class="form__label">Full name</label>
-                </div>
-                <div class="form__group">
-                  <input
-                    type="email"
-                    class="form__input"
-                    placeholder="Email address"
-                    id="email"
-                    required
-                  />
-                  <label for="email" class="form__label">Email address</label>
-                </div>
-                <div class="form__group u-margin-bottom-medium">
-                  <div class="form__radio-group">
-                    <input
-                      type="radio"
-                      class="form__radio-input"
-                      id="small"
-                      name="size"
-                    />
-                    <label for="small" class="form__radio-label">
-                      <span class="form__radio-button"></span>
-                      Ginnastica ritmica
-                    </label>
-                  </div>
-                  <div class="form__radio-group">
-                    <input
-                      type="radio"
-                      class="form__radio-input"
-                      id="large"
-                      name="size"
-                    />
-                    <label for="large" class="form__radio-label">
-                      <span class="form__radio-button"></span>
-                      Danza classica
-                    </label>
-                  </div>
-                </div>
-                <div class="form__group">
-                  <button class="btn btn--green">Invia &rarr;</button>
-                </div>
-              </form>
+
+            <div class="divider">ciao</div>
+            
+        </section>
+        
+        <section class="section-book" id="section-book">
+            <div class="u-center-text u-margin-bottom-big">
+                <h2 class="heading-secondary" style="text-transform: uppercase">
+                    voglio saperne di più !
+                </h2>
             </div>
-            <div class="book__img"></div>
-          </div>
-        </div>
-      </section>
+            <div style="max-width: 114rem; margin: 0 auto">
+                <div class="book">
+                    <div class="book__form">
+                        <form action="#" class="form">
+                            <div class="u-margin-bottom-medium">
+                                <h2 class="heading-secondary">Bastano due clic ...</h2>
+                            </div>
+                            <div class="form__group">
+                                <input
+                                type="text"
+                                class="form__input"
+                                placeholder="Full Name"
+                                id="name"
+                                required
+                                />
+                                <label for="name" class="form__label">Full name</label>
+                            </div>
+                            <div class="form__group">
+                                <input
+                                type="email"
+                                class="form__input"
+                                placeholder="Email address"
+                                id="email"
+                                required
+                                />
+                                <label for="email" class="form__label">Email address</label>
+                            </div>
+                            <div class="form__group u-margin-bottom-medium">
+                                <div class="form__radio-group">
+                                    <input
+                                    type="radio"
+                                    class="form__radio-input"
+                                    id="small"
+                                    name="size"
+                                    />
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Ginnastica ritmica
+                                    </label>
+                                </div>
+                                <div class="form__radio-group">
+                                    <input
+                                    type="radio"
+                                    class="form__radio-input"
+                                    id="large"
+                                    name="size"
+                                    />
+                                    <label for="large" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Danza classica
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__group">
+                                <button class="btn btn--green">Invia &rarr;</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="book__img"></div>
+                </div>
+            </div>
+        </section>
+        
+        
     </main>
     <footer class="footer">
-      <div class="container grid grid--footer">
-        <div class="first-col">
-          <a href="#" class="first-col__logo">
-            <img
-              src="img/logo-ideo-color.png"
-              alt="Ideo logo"
-              class="first-col__logo-ideo"
-            />
-          </a>
-
-          <ul class="first-col__social-links">
-            <li>
-              <a
-                class="footer-logo"
-                href="https://www.instagram.com/a.s.d.ginnastica_ideo/?hl=it"
-                ><ion-icon
-                  class="first-col__social-icon"
-                  name="logo-instagram"
-                ></ion-icon
-              ></a>
-            </li>
-            <li>
-              <a
-                class="footer-logo"
-                href="https://www.facebook.com/asdginnasticaideo/"
-                ><ion-icon
-                  class="first-col__social-icon"
-                  name="logo-facebook"
-                ></ion-icon
-              ></a>
-            </li>
-            <li>
-              <a class="footer-logo" href="tel:415-201-6370">
-                <ion-icon
-                  class="first-col__social-icon"
-                  name="call-outline"
-                ></ion-icon>
-              </a>
-            </li>
-            <li>
-              <a class="footer-logo" href="mailto:hello@omnifood.com"
-                ><ion-icon
-                  class="first-col__social-icon"
-                  name="mail-open-outline"
-                ></ion-icon
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class="address-col">
-          <p class="footer-heading">Contatti</p>
-          <address class="contacts">
-            <p class="address">Via Priori, 37018 Malcesine VR</p>
-            <p>
-              <a class="footer-link" href="tel:415-201-6370">+39 329 128 2582</a
-              ><br />
-              <a class="footer-link" href="mailto:hello@omnifood.com"
-                >a.s.dginnasticaritmicaideo@gmail.com</a
-              >
-            </p>
-          </address>
-        </div>
-        <nav class="nav-col">
-          <p class="footer-heading">Affiliazioni</p>
-          <div class="footer-logo-container">
-            <img
-              src="./img/AICS-blue.png"
-              alt="Logo"
-              class="header__logo"
-              style="height: 4rem"
-            />
-
-            <img
-              src="./img/FGI.png"
-              alt="Logo"
-              class="header__logo"
-              style="height: 5rem"
-            />
-            <p class="footer-logo__code">118230</p>
-            <p class="footer-logo__code">003532</p>
-          </div>
-          <!--<ul class="footer-nav">
-            <li><a class="footer-link" href="#">Create account</a></li>
-            <li><a class="footer-link" href="#">Sign in</a></li>
-            <li><a class="footer-link" href="#">iOS app</a></li>
-            <li><a class="footer-link" href="#">Android app</a></li>
-          </ul>-->
-        </nav>
-        <nav class="nav-col">
-          <p class="footer-heading">Info</p>
-          <ul class="footer-nav">
-            <li><p class="footer-link" href="">Info legali</p></li>
-            <li><p class="footer-link" href="">Credits</p></li>
-            <li><p class="footer-link" href="">Privacy</p></li>
-          </ul>
-        </nav>
-        <nav class="copy-col">
-          <p class="copy-col__copyright">P.I. 0490500232</p>
-          <p class="copy-col__copyright">
-            Copyright &copy; <span class="year">2023</span> by A.S.D. Ginnastica
-            Ideò All rights reserved.
-          </p>
-        </nav>
-      </div>
-    </footer>
-
-    <!--<nav class="nav-col">
-          <p class="footer-heading">Company</p>
-          <ul class="footer-nav">
-            <li><a class="footer-link" href="#">About Omnifood</a></li>
-            <li><a class="footer-link" href="#">For Business</a></li>
-            <li><a class="footer-link" href="#">Cooking partners</a></li>
-            <li><a class="footer-link" href="#">Careers</a></li>
-          </ul>
-        </nav>-->
-
-    <!-- FOOTER OLD
-      <footer class="footer">
-      <div class="footer__logo-box">
-        <picture class="footer__logo">
-          art direction - it serves different images depending on the media query
-          <source
-            srcset="
-              img/logo-green-small-1x.png 1x,
-              img/logo-green-small-2x.png 2x
-            "
-            media="(max-width: 37.5em)"
-          />
-
-          density switching - is serves the same image with different resolution
-          <img
-            srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
-            alt="Full logo"
-            class="footer__logo"
-            src="img/logo-green-2x.png"
-          />
-        </picture>
-      </div>
-      <div class="row">
-        <div class="col-1-of-2">
-          <div class="footer__navigation">
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a href="#" class="footer__link">Company</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Contact us</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Carriers</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Privacy policy</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Terms</a>
-              </li>
+        <div class="container grid grid--footer">
+            <div class="first-col">
+                <a href="#" class="first-col__logo">
+                    <img
+                    src="img/logo-ideo-color.png"
+                    alt="Ideo logo"
+                    class="first-col__logo-ideo"
+                    />
+                </a>
+                
+                <ul class="first-col__social-links">
+                    <li>
+                        <a
+                        class="footer-logo"
+                        href="https://www.instagram.com/a.s.d.ginnastica_ideo/?hl=it"
+                        ><ion-icon
+                        class="first-col__social-icon"
+                        name="logo-instagram"
+                        ></ion-icon
+                        ></a>
+                    </li>
+                    <li>
+                        <a
+                        class="footer-logo"
+                        href="https://www.facebook.com/asdginnasticaideo/"
+                        ><ion-icon
+                        class="first-col__social-icon"
+                        name="logo-facebook"
+                        ></ion-icon
+                        ></a>
+                    </li>
+                    <li>
+                        <a class="footer-logo" href="tel:415-201-6370">
+                            <ion-icon
+                            class="first-col__social-icon"
+                            name="call-outline"
+                            ></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-logo" href="mailto:hello@omnifood.com"
+                        ><ion-icon
+                        class="first-col__social-icon"
+                        name="mail-open-outline"
+                        ></ion-icon
+                        ></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="address-col">
+                <p class="footer-heading">Contatti</p>
+                <address class="contacts">
+                    <p class="address">Via Priori, 37018 Malcesine VR</p>
+                    <p>
+                        <a class="footer-link" href="tel:415-201-6370">+39 329 128 2582</a
+                            ><br />
+                            <a class="footer-link" href="mailto:hello@omnifood.com"
+                            >a.s.dginnasticaritmicaideo@gmail.com</a
+                            >
+                        </p>
+                    </address>
+                </div>
+                <nav class="nav-col">
+                    <p class="footer-heading">Affiliazioni</p>
+                    <div class="footer-logo-container">
+                        <img
+                        src="./img/AICS-blue.png"
+                        alt="Logo"
+                        class="header__logo"
+                        style="height: 4rem"
+                        />
+                        
+                        <img
+                        src="./img/FGI.png"
+                        alt="Logo"
+                        class="header__logo"
+                        style="height: 5rem"
+                        />
+                        <p class="footer-logo__code">118230</p>
+                        <p class="footer-logo__code">003532</p>
+                    </div>
+                    <!--<ul class="footer-nav">
+                        <li><a class="footer-link" href="#">Create account</a></li>
+                        <li><a class="footer-link" href="#">Sign in</a></li>
+                        <li><a class="footer-link" href="#">iOS app</a></li>
+                        <li><a class="footer-link" href="#">Android app</a></li>
+                    </ul>-->
+                </nav>
+                <nav class="nav-col">
+                    <p class="footer-heading">Info</p>
+                    <ul class="footer-nav">
+                        <li><p class="footer-link" href="">Info legali</p></li>
+                        <li><p class="footer-link" href="">Credits</p></li>
+                        <li><p class="footer-link" href="">Privacy</p></li>
+                    </ul>
+                </nav>
+                <nav class="copy-col">
+                    <p class="copy-col__copyright">P.I. 0490500232</p>
+                    <p class="copy-col__copyright">
+                        Copyright &copy; <span class="year">2023</span> by A.S.D. Ginnastica
+                        Ideò All rights reserved.
+                    </p>
+                </nav>
+            </div>
+        </footer>
+        
+        <!--<nav class="nav-col">
+            <p class="footer-heading">Company</p>
+            <ul class="footer-nav">
+                <li><a class="footer-link" href="#">About Omnifood</a></li>
+                <li><a class="footer-link" href="#">For Business</a></li>
+                <li><a class="footer-link" href="#">Cooking partners</a></li>
+                <li><a class="footer-link" href="#">Careers</a></li>
             </ul>
-          </div>
-        </div>
-        <div class="col-1-of-2">
-          <p class="footer__copyright">
-            Build by <a href="#" class="footer__link">Matteo Calderaro</a> for
-            his portfolio
-          </p>
-        </div>
-      </div>
-    </footer>
-    -->
-
-    <!-- MORE FEATURES
-      <div class="feature">
-          <svg class="feature__icon">
-            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
-          </svg>
-          <h4 class="heading-4 heading-4--dark">vicino a casa</h4>
-          <p class="feature__test">
-            Tenetur distinctio necessitatibus pariatur voluptatibus quidem
-            consequatur harum.
-          </p>
+        </nav>-->
+        
+        <!-- FOOTER OLD
+        <footer class="footer">
+            <div class="footer__logo-box">
+                <picture class="footer__logo">
+                    art direction - it serves different images depending on the media query
+                    <source
+                    srcset="
+                    img/logo-green-small-1x.png 1x,
+                    img/logo-green-small-2x.png 2x
+                    "
+                    media="(max-width: 37.5em)"
+                    />
+                    
+                    density switching - is serves the same image with different resolution
+                    <img
+                    srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+                    alt="Full logo"
+                    class="footer__logo"
+                    src="img/logo-green-2x.png"
+                    />
+                </picture>
+            </div>
+            <div class="row">
+                <div class="col-1-of-2">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Company</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Contact us</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Carriers</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Privacy policy</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__link">Terms</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1-of-2">
+                    <p class="footer__copyright">
+                        Build by <a href="#" class="footer__link">Matteo Calderaro</a> for
+                        his portfolio
+                    </p>
+                </div>
+            </div>
+        </footer>
+        -->
+        
+        <!-- MORE FEATURES
+        <div class="feature">
+            <svg class="feature__icon">
+                <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--dark">vicino a casa</h4>
+            <p class="feature__test">
+                Tenetur distinctio necessitatibus pariatur voluptatibus quidem
+                consequatur harum.
+            </p>
         </div>
         <div class="feature">
-          <svg class="feature__icon">
-            <use xlink:href="img/sprite.svg#icon-clock"></use>
-          </svg>
-          <h4 class="heading-4 heading-4--dark">Top 1% realtors</h4>
-          <p class="feature__test">
-            Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio
-            necessitatibus pariatur voluptatibus.
-          </p>
+            <svg class="feature__icon">
+                <use xlink:href="img/sprite.svg#icon-clock"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--dark">Top 1% realtors</h4>
+            <p class="feature__test">
+                Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio
+                necessitatibus pariatur voluptatibus.
+            </p>
         </div>
         <div class="feature">
-          <svg class="feature__icon">
-            <use xlink:href="img/sprite.svg#icon-lock"></use>
-          </svg>
-          <h4 class="heading-4 heading-4--dark">Secure payments on nexter</h4>
-          <p class="feature__test">
-            Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia
-            quae.
-          </p>
-      </div>
-      -->
-
-    <!-- POPUP
-      <div class="popup" id="popup">
-      <div class="popup__content">
-        <div class="popup__left">
-          <img
-            srcset="img/nat-8.jpg 500w, img/nat-8-large.jpg 1000w"
-            sizes="(max-width:56.25em) 38vw, (max-width:37.5em) 55vw, 425px"
-            alt="Tour photo"
-            class="popup__img"
-            src="img/nat-8-large.jpg"
-          />
-          <img
-            srcset="img/nat-9.jpg 500w, img/nat-9.jpg 1000w"
-            sizes="(max-width:56.25em) 38vw, (max-width:37.5em) 55vw, 425px"
-            alt="Tour photo"
-            class="popup__img"
-            src="img/nat-9.jpg"
-          />
+            <svg class="feature__icon">
+                <use xlink:href="img/sprite.svg#icon-lock"></use>
+            </svg>
+            <h4 class="heading-4 heading-4--dark">Secure payments on nexter</h4>
+            <p class="feature__test">
+                Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia
+                quae.
+            </p>
         </div>
-        <div class="popup__right">
-          <a href="#section-tours" class="popup__close">&times;</a>
-          <h2 class="heading-secondary u-margin-bottom-small">
-            Start booking now
-          </h2>
-          <h3 class="heading-tertiary u-margin-bottom-small">
-            Important &ndash; Please read these therms before booking
-          </h3>
-          <p class="popup__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam
-            volutpat commodo sed egestas egestas. Ultricies tristique nulla
-            aliquet enim tortor at auctor urna nunc. Turpis massa tincidunt dui
-            ut ornare lectus sit amet. Auctor neque vitae tempus quam. Imperdiet
-            sed euismod nisi porta lorem mollis. Sed tempus urna et pharetra
-            pharetra massa massa. Purus faucibus ornare suspendisse sed nisi
-            lacus sed. Viverra justo nec ultrices dui sapien.
-          </p>
-          <a href="#section-tours" class="btn btn--green">Book now</a>
+        -->
+        
+        <!-- POPUP
+        <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    <img
+                    srcset="img/nat-8.jpg 500w, img/nat-8-large.jpg 1000w"
+                    sizes="(max-width:56.25em) 38vw, (max-width:37.5em) 55vw, 425px"
+                    alt="Tour photo"
+                    class="popup__img"
+                    src="img/nat-8-large.jpg"
+                    />
+                    <img
+                    srcset="img/nat-9.jpg 500w, img/nat-9.jpg 1000w"
+                    sizes="(max-width:56.25em) 38vw, (max-width:37.5em) 55vw, 425px"
+                    alt="Tour photo"
+                    class="popup__img"
+                    src="img/nat-9.jpg"
+                    />
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    <h2 class="heading-secondary u-margin-bottom-small">
+                        Start booking now
+                    </h2>
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                        Important &ndash; Please read these therms before booking
+                    </h3>
+                    <p class="popup__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam
+                        volutpat commodo sed egestas egestas. Ultricies tristique nulla
+                        aliquet enim tortor at auctor urna nunc. Turpis massa tincidunt dui
+                        ut ornare lectus sit amet. Auctor neque vitae tempus quam. Imperdiet
+                        sed euismod nisi porta lorem mollis. Sed tempus urna et pharetra
+                        pharetra massa massa. Purus faucibus ornare suspendisse sed nisi
+                        lacus sed. Viverra justo nec ultrices dui sapien.
+                    </p>
+                    <a href="#section-tours" class="btn btn--green">Book now</a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    -->
+        -->
+        
+        <!--
+        <section class="grid-test">
+            <div class="row">
+                <div class="col-1-of-2">col-1-of-2</div>
+                <div class="col-1-of-2">col-1-of-2</div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">col-1-of-3</div>
+                <div class="col-1-of-3">col-1-of-3</div>
+                <div class="col-1-of-3">col-1-of-3</div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-3">col-1-of-3</div>
+                <div class="col-2-of-3">col-2-of-3</div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-4">col-1-of-4</div>
+                <div class="col-1-of-4">col-1-of-4</div>
+                <div class="col-1-of-4">col-1-of-4</div>
+                <div class="col-1-of-4">col-1-of-4</div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-4">col-1-of-4</div>
+                <div class="col-1-of-4">col-1-of-4</div>
+                <div class="col-2-of-4">col-2-of-4</div>
+            </div>
+            <div class="row">
+                <div class="col-1-of-4">col-1-of-4</div>
+                <div class="col-3-of-4">col-3-of-4</div>
+            </div>
+        </section>
+        -->
+        
 
-    <!--
-    <section class="grid-test">
-      <div class="row">
-        <div class="col-1-of-2">col-1-of-2</div>
-        <div class="col-1-of-2">col-1-of-2</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-3">col-1-of-3</div>
-        <div class="col-1-of-3">col-1-of-3</div>
-        <div class="col-1-of-3">col-1-of-3</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-3">col-1-of-3</div>
-        <div class="col-2-of-3">col-2-of-3</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-4">col-1-of-4</div>
-        <div class="col-1-of-4">col-1-of-4</div>
-        <div class="col-1-of-4">col-1-of-4</div>
-        <div class="col-1-of-4">col-1-of-4</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-4">col-1-of-4</div>
-        <div class="col-1-of-4">col-1-of-4</div>
-        <div class="col-2-of-4">col-2-of-4</div>
-      </div>
-      <div class="row">
-        <div class="col-1-of-4">col-1-of-4</div>
-        <div class="col-3-of-4">col-3-of-4</div>
-      </div>
-    </section>
-    -->
-  </body>
+        <!-- Bootstrap JS (Bundle includes Popper) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+        
+        <!-- Glide.js JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js"></script>
+        
+        <!-- Initialize Glide and load data -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            // Fetch carousel data from JSON file
+            fetch('carousel.json')
+                .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+                })
+                .then(data => {
+                // Get carousel slides container
+                const slidesContainer = document.getElementById('carousel-slides');
+                const bulletsContainer = document.getElementById('carousel-bullets');
+                
+                // Clear any existing content
+                slidesContainer.innerHTML = '';
+                bulletsContainer.innerHTML = '';
+                
+                // Generate slides from JSON data
+                data.forEach((item, index) => {
+                    // Create slide
+                    const slide = document.createElement('li');
+                    slide.className = 'glide__slide';
+                    
+                    // Create card structure
+                    slide.innerHTML = `
+                    <div class="card">
+                        <div class="card-img">
+                        <img src="img/${item.img}" alt="${item.title}">
+                        </div>
+                        <div class="card-body">
+                        <h2 class="card-title">${item.title}</h2>
+                        <p class="card-text feature__test">${item.text}</p>
+                        </div>
+                    </div>
+                    `;
+                    
+                    // Add slide to container
+                    slidesContainer.appendChild(slide);
+                    
+                    // Create bullet
+                    const bullet = document.createElement('button');
+                    bullet.className = 'glide__bullet';
+                    bullet.setAttribute('data-glide-dir', `=${index}`);
+                    
+                    // Add bullet to container
+                    bulletsContainer.appendChild(bullet);
+                });
+                
+                // Initialize Glide.js after slides are added
+                var glide = new Glide('.glide', {
+                    type: 'carousel',
+                    perView: 3,
+                    gap: 0, // Using padding instead of gap for better control
+                    autoplay: 3000,
+                    hoverpause: true,
+                    bound: true,
+                    rewind: false,
+                    peek: 0,
+                    breakpoints: {
+                    992: {
+                        perView: 2
+                    },
+                    576: {
+                        perView: 1
+                    }
+                    }
+                }).mount();
+                })
+                .catch(error => {
+                console.error('Error fetching carousel data:', error);
+                document.getElementById('carousel-slides').innerHTML = '<li class="glide__slide"><div class="card"><div class="card-body"><h5 class="card-title">Error</h5><p class="card-text">Failed to load carousel data</p></div></div></li>';
+                });
+            });
+        </script>
+    </body>
 </html>
+    

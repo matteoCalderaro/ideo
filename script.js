@@ -68,3 +68,9 @@ obs.observe(header);
 // navigation__button;
 // navigation__background;
 // navigation__nav;
+
+
+window.onload = function() {
+  var video = document.getElementById("myVideo");
+  video.currentTime = 0;  // Reset the video to the start
+};
