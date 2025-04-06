@@ -302,14 +302,7 @@ body {
     color: #495057;
 }
 
-/* Responsive styles */
-@media (max-width: 992px) {
 
-    
-    .carousel-container h1 {
-        font-size: 1.8rem;
-    }
-}
 
 @media (max-width: 768px) {
     /* Removed the grid template columns since we're no longer using grid display */

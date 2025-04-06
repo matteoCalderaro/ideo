@@ -40,9 +40,12 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Create card structure
             slide.innerHTML = `
-                <div class="card" data-id="${item.id}" style="color:inherit;">
-                    <div class="card-img">
+                <div class="card" data-id="${item.id}" style="color:inherit; position:relative;">
+                    <div class="card-img" style="position:relative;">
                         <img src="img/${item.img}" alt="${item.title}">
+                        <div class="card-overlay">
+                            <i class="bi bi-search search-icon"></i>
+                        </div>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title heading-4">${item.title}</h5>
