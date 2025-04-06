@@ -1,38 +1,72 @@
 [
     {
         "id":1,
-        "img": "carosello_1.jpg",
-        "title": "XX International tournament",
-        "text": "Sofia 2023"
+        "img": "XXTournament/5.jpg",
+        "title": "XX International Tournament",
+        "text": "Sofia 2023",
+        "details": {
+			"innerTitle" : "XX International Tournament",
+			"innerText" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat placerat congue. Integer finibus suscipit aliquet. Curabitur accumsan, sapien in aliquet convallis, nibh elit dictum eros, ac convallis felis lectus at ligula. Proin eros felis, rutrum eu orci sit amet, eleifend facilisis elit. Duis ante justo, aliquet eu mauris a, rhoncus dignissim nibh. Morbi tempor, felis vitae egestas viverra, diam ex fringilla diam, sed ornare mauris risus sit amet arcu. Phasellus eu dui condimentum, convallis velit vel, imperdiet quam.",
+			"innerPics": {
+				"1" : "XXTournament/1.jpg",
+				"2" : "XXTournament/2.jpg",
+				"3" : "XXTournament/3.jpg",
+				"4" : "XXTournament/4.jpg",
+				"5" : "XXTournament/5.jpg",
+				"6" : "XXTournament/6.jpg",
+				"7" : "XXTournament/7.jpg",
+				"8" : "XXTournament/8.jpg",
+				"9" : "XXTournament/9.jpg",
+				"10" : "XXTournament/10.jpg",
+				"11" : "XXTournament/11.jpg",
+				"12" : "XXTournament/12.jpg",
+				"13" : "XXTournament/12.jpg"
+			}
+		}
     },
     {
         "id": 2,
-        "img": "gim-2-400.jpg",
+        "img": "placeHolder/1.jpg",
         "title": "Gara 2",
-        "text": "Lorem ipsum dolor sit amet, cons adipiscing elit."
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "details": {
+            "innerTitle" : "Gara 2",
+			"innerText" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat placerat congue. Integer finibus suscipit aliquet. Curabitur accumsan, sapien in aliquet convallis, nibh elit dictum eros, ac convallis felis lectus at ligula. Proin eros felis, rutrum eu orci sit amet, eleifend facilisis elit. Duis ante justo, aliquet eu mauris a, rhoncus dignissim nibh. Morbi tempor, felis vitae egestas viverra, diam ex fringilla diam, sed ornare mauris risus sit amet arcu. Phasellus eu dui condimentum, convallis velit vel, imperdiet quam.",
+			"innerPics": {
+				"1" : "placeHolder/1.jpg",
+				"2" : "placeHolder/2.jpg",
+				"3" : "placeHolder/3.jpg"
+			}
+        }
     },
     {
         "id": 3,
-        "img": "gim-3-400.jpg",
+        "img": "placeHolder/1.jpg",
         "title": "Gara 3",
-        "text": "Lorem ipsum dolor sit amet, cons adipiscing elit."
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "details": {
+            "innerTitle" : "Gara 3",
+			"innerText" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat placerat congue. Integer finibus suscipit aliquet. Curabitur accumsan, sapien in aliquet convallis, nibh elit dictum eros, ac convallis felis lectus at ligula. Proin eros felis, rutrum eu orci sit amet, eleifend facilisis elit. Duis ante justo, aliquet eu mauris a, rhoncus dignissim nibh. Morbi tempor, felis vitae egestas viverra, diam ex fringilla diam, sed ornare mauris risus sit amet arcu. Phasellus eu dui condimentum, convallis velit vel, imperdiet quam.",
+			"innerPics": {
+				"1" : "placeHolder/1.jpg",
+				"2" : "placeHolder/2.jpg",
+				"3" : "placeHolder/3.jpg"
+			}
+        }
     },
     {
         "id": 4,
-        "img": "gim-1-400.jpg",
+        "img": "placeHolder/1.jpg",
         "title": "Gara 4",
-        "text": "Lorem ipsum dolor sit amet, cons adipiscing elit."
-    },
-    {
-        "id": 5,
-        "img": "gim-2-400.jpg",
-        "title": "Gara 5",
-        "text": "Lorem ipsum dolor sit amet, cons adipiscing elit."
-    },
-    {
-        "id": 6,
-        "img": "gim-3-400.jpg",
-        "title": "Gara 6",
-        "text": "Lorem ipsum dolor sit amet, cons adipiscing elit."
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "details": {
+            "innerTitle" : "Gara 4",
+			"innerText" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat placerat congue. Integer finibus suscipit aliquet. Curabitur accumsan, sapien in aliquet convallis, nibh elit dictum eros, ac convallis felis lectus at ligula. Proin eros felis, rutrum eu orci sit amet, eleifend facilisis elit. Duis ante justo, aliquet eu mauris a, rhoncus dignissim nibh. Morbi tempor, felis vitae egestas viverra, diam ex fringilla diam, sed ornare mauris risus sit amet arcu. Phasellus eu dui condimentum, convallis velit vel, imperdiet quam.",
+			"innerPics": {
+				"1" : "placeHolder/1.jpg",
+				"2" : "placeHolder/2.jpg",
+				"3" : "placeHolder/3.jpg"
+			}
+        }
     }
 ]

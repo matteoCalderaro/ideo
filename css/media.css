@@ -1,0 +1,341 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    position: relative; /* For absolute positioning reference */
+}
+
+/* Page transition system */
+.main-content {
+    display: block; /* Always displayed */
+    width: 100%;
+    transition: opacity 0.3s ease; /* Only fade, no movement */
+    position: relative;
+    z-index: 1; /* Lower than detail page */
+}
+
+.detail-page {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Start offscreen to the left */
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1002; /* Above the main content */
+    overflow-y: auto; /* Allow scrolling within the detail page */
+    box-sizing: border-box;
+    transition: transform 0.4s ease-out; /* Smooth animation */
+    display: block; /* Always shown (but offscreen) */
+    max-width: 100%; /* Full viewport width */
+    margin: 0;
+}
+
+/* Add sticky header for detail page */
+.detail-page-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2000;
+}
+
+/* When active, slide the detail page into view from left side */
+.detail-page.active {
+    transform: translateX(100%); /* Move right to enter viewport */
+}
+
+/* When detail page is active, only fade the main content without moving it */
+.main-content.detail-active {
+    opacity: 0.3; /* Dim the background content */
+    /* No transform anymore */
+}
+
+/* Container styles */
+.carousel-container, .video-container {
+    max-width: 1368px !important;
+    margin: 0 auto;
+    position: relative;
+}
+
+.video-container {
+    padding: 0 15px;
+}
+
+/* Card styles */
+.carousel-container .card, .video-container .card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Added hover transition */
+}
+
+.carousel-container .card:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.carousel-container .card {
+    height: 350px;
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+/* Card image styles */
+.carousel-container .card-img {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.carousel-container .card-img img, .detail-page-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Card body styles */
+.carousel-container .card-body {
+    padding: 20px;
+    height: 150px;
+}
+
+.carousel-container .card-text {
+    color: #6c757d;
+}
+
+/* Glide carousel customizations */
+.carousel-container .glide {
+    overflow: hidden;
+}
+
+.carousel-container .glide__track {
+    overflow: visible !important;
+    margin: 0 -5px;
+}
+
+.carousel-container .glide__slide {
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Navigation controls */
+.carousel-container .navigation-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.carousel-container .nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* width: 250px; */
+}
+
+/* Bullet navigation */
+.carousel-container .glide__bullets {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
+    display: flex !important; 
+    justify-content: center !important;
+}
+
+.carousel-container .glide__bullet {
+    background-color: #ccc;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    margin: 0 3px;
+    transition: background-color 0.3s;
+}
+
+.carousel-container .glide__bullet--active {
+    background-color: #333;
+}
+
+/* Arrow navigation */
+.carousel-container .glide__arrows {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-container .glide__arrow {
+    position: static;
+    background: none;
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+    padding: 10px;
+    transform: none;
+    box-shadow: none;
+}
+
+.carousel-container .glide__arrow:before {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-top: 2px solid #333;
+    border-right: 2px solid #333;
+    transition: border-color 0.2s ease; /* Added transition */
+}
+
+.carousel-container .glide__arrow:hover:before {
+    border-color: #000; /* Darker on hover */
+}
+
+.carousel-container .glide__arrow--left:before {
+    transform: rotate(-135deg);
+}
+
+.carousel-container .glide__arrow--right:before {
+    transform: rotate(45deg);
+}
+
+/* Video styles */
+.video-player {
+    width: 100%;
+    display: block;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Detail page specific styles */
+.detail-page h1 {
+    margin-top: 40px; /* Updated from the new CSS */
+    margin-bottom: 20px;
+    color: #333;
+    margin-right: 60px; /* From new CSS for close button */
+}
+
+.detail-page p {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+/* Override existing detail-page-images styles with new ones */
+.detail-page-images {
+    display: block !important; /* Override grid display */
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    padding: 0;
+}
+
+.detail-page-images a {
+    display: inline-block;
+}
+
+.detail-page-images img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    height: auto; /* Override fixed height */
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.detail-page-images a:hover img {
+    transform: scale(1.03);
+}
+
+/* LightGallery customization */
+.lg-fullscreen {
+    display: none !important;
+}
+
+/* Back button */
+.back-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: fixed; /* Fixed position for better UX */
+    top: 20px;
+    right: 20px;
+    font-size: 14px;
+    z-index: 1001; /* Above everything */
+}
+
+.back-button:hover {
+    background-color: #555;
+}
+
+/* Close button styling */
+.close-button {
+    width: 40px;
+    height: 40px;
+    background-color: #badaf9;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    z-index: 1010;
+}
+
+.close-button:hover {
+    background-color: #e9ecef;
+    transform: scale(1.1);
+}
+
+.close-button svg {
+    width: 20px;
+    height: 20px;
+    color: #495057;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+
+    
+    .carousel-container h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Removed the grid template columns since we're no longer using grid display */
+}
+
+@media (max-width: 576px) {
+    .carousel-container .card {
+        height: auto;
+        min-height: 300px;
+    }
+    
+    .carousel-container .card-body {
+        height: auto;
+    }
+    
+    
+    .carousel-container h1, .detail-page h1 {
+        font-size: 1.5rem;
+    }
+    
+    .video-container {
+        margin-bottom: 2rem !important;
+    }
+    
+    .back-button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}

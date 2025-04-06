@@ -3,34 +3,36 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-    
-      <!-- Glide.js Core CSS -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.core.min.css">
-      
-
-    
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"  />
+
+    <!-- jQuery (required for justifiedGallery and lightGallery) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <!-- Glide.js Core CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/css/glide.core.min.css">
     
+    <!-- JustifiedGallery CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css">
+    
+    <!-- LightGallery CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css">
+
+
     <!--comment after building -->
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/style-carousel.css" />
+    <link rel="stylesheet" href="css/media.css" />
     <!--<link rel="shortcut icon" type="image/png" href="img/favicon.png" />-->
     
     <!-- ICONS -->
-    <script
-    type="module"
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-    nomodule
-    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
     <script defer src="script.js"></script>
+    
     
     <title>Ginnastica Ideò | Ginnastica Ritmica & Danza Classica</title>
 </head>
@@ -283,121 +285,81 @@
                 </div>
             </div>
         </section>
-        
-        <!-- <section class="section-stories" id="section-stories">
-            <div class="u-center-text u-margin-bottom-big">
-                <h2 class="heading-secondary">chi siamo ...</h2>
-            </div>
-            <div class="row">
-                <div class="story story-1">
-                    <figure class="story__shape">
-                        <img
-                        srcset="img/trifonova.jpeg 500w, img/trifonova.jpeg 1000w"
-                        sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 225px"
-                        alt="Person on a tour"
-                        class="story__img"
-                        src="img/trifonova.jpeg"
-                        />
-                        <figcaption class="story__caption">Trifonova</figcaption>
-                    </figure>
-                    <div class="story__text">
-                        <h3 class="heading-tertiary u-margin-bottom-small">la ritmica</h3>
-                        <p class="story__paragraph">
-                            <span class="story__quotation--open"></span>Ho iniziato con la
-                            danza ritmica da bambina e da allora non ho più smesso. Le
-                            emozioni che provavo allora le rivivo oggi tramettendo ai
-                            ragazzi la mia passione. Quando i miei piedi iniziano a danzare
-                            e i muscoli ne assecondano i movimenti, il mio corpo prende il
-                            volo ...<span class="story__quotation--close"></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="story story-2">
-                    <figure class="story__shape">
-                        <img
-                        srcset="img/caroline.jpeg 500w, img/caroline.jpeg 1000w"
-                        sizes="(max-width:900px) 20vw, (max-width:600px) 30vw, 225px"
-                        alt="Person on a tour"
-                        class="story__img"
-                        src="img/caroline.jpeg"
-                        />
-                        <figcaption class="story__caption">Caroline</figcaption>
-                    </figure>
-                    <div class="story__text">
-                        <h3 class="heading-tertiary u-margin-bottom-small">
-                            la classica
-                        </h3>
-                        <p class="story__paragraph">
-                            <span class="story__quotation--open"></span>La danza è pura
-                            forma artistica perché esprime emozioni, stati d’animo, racconta
-                            storie, l’amore per se stessi e gli altri, per la vita, per i
-                            sogni e i desideri. Chi danza esprime tutto se stesso, perché
-                            non è solo il corpo a danzare, bensì anche la mente, l’anima, il
-                            cuore ...<span class="story__quotation--close"></span>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        
+                
         <div class="divider">ciao</div>
 
         <section class="section-media" id="section-media">
 
             
-            <div class="video-container mb-5">
-
-                <div class="card">
-                    <video id="myVideo" controls muted loop class="video-player">
-                        <source src="img/video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="card-body py-5">
-                        <h2 class="card-title">Artistic Dance Performance</h2>
-                        <p class="card-text feature__test">A captivating 30-second artistic dance performance showcasing fluid movements and creative expression.</p>
+            <div class="main-content" id="main-content">
+                <div class="video-container mb-5">
+                    <h1 class="mb-4">Video</h1>
+                    <div class="card">
+                        <video controls muted  class="video-player">
+                            <source src="img/video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title">Artistic Dance Performance</h5>
+                            <p class="card-text">A captivating 30-second artistic dance performance showcasing fluid movements and creative expression.</p>
+                        </div>
                     </div>
                 </div>
         
-            </div>
-
-            <div class="divider">ciao</div>
-            
-        
-            <div class="carousel-container">
-                
-                
-                <div class="glide">
-                    <div class="glide__track" data-glide-el="track">
-                        <ul class="glide__slides" id="carousel-slides">
-                            <!-- Slides will be dynamically inserted here -->
-                        </ul>
-                    </div>
+                <div class="carousel-container">
+                    <h1 class="mb-4" style="margin: 0 15px;">Carosello</h1>
                     
-                    <!-- Navigation controls -->
-                    <div class="navigation-controls">
-                        <div class="nav-wrapper">
-                            <!-- Left arrow -->
-                            <div class="glide__arrows" data-glide-el="controls">
-                                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
-                            </div>
-                            
-                            <!-- Pagination bullets -->
-                            <div class="glide__bullets" data-glide-el="controls[nav]" id="carousel-bullets">
-                                <!-- Bullets will be dynamically inserted here -->
-                            </div>
-                            
-                            <!-- Right arrow -->
-                            <div class="glide__arrows" data-glide-el="controls">
-                                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides" id="carousel-slides">
+                                <!-- Slides will be dynamically inserted here -->
+                            </ul>
+                        </div>
+                        
+                        <!-- Navigation controls -->
+                        <div class="navigation-controls">
+                            <div class="nav-wrapper">
+                                <!-- Left arrow -->
+                                <div class="glide__arrows" data-glide-el="controls">
+                                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+                                </div>
+                                
+                                <!-- Pagination bullets -->
+                                <div class="glide__bullets" data-glide-el="controls[nav]" id="carousel-bullets">
+                                    <!-- Bullets will be dynamically inserted here -->
+                                </div>
+                                
+                                <!-- Right arrow -->
+                                <div class="glide__arrows" data-glide-el="controls">
+                                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"></button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="divider">ciao</div>
+            
+            <div class="detail-page" id="detail-page">
+                <div class="detail-page-header shadow-sm">
+                  <div class="d-flex justify-content-between align-items-center px-3 mx-auto" style="max-width: 1200px;height: 85px;">
+                    <div class="fs-2" id="detail-title"></div>
+                    <button class="close-button" id="back-button" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="mt-3 ps-3 mx-auto" style="max-width: 1200px;">
+                  <p id="detail-text"></p>
+                </div>
+                <div class="detail-page-images" id="detail-images" style="width: 1200px;">
+                    <!-- Anchor tags with images will be inserted here by JS -->
+                </div>
+        
+             
+            </div>
             
         </section>
         
@@ -577,265 +539,24 @@
                     </p>
                 </nav>
             </div>
-        </footer>
+    </footer>
         
-        <!--<nav class="nav-col">
-            <p class="footer-heading">Company</p>
-            <ul class="footer-nav">
-                <li><a class="footer-link" href="#">About Omnifood</a></li>
-                <li><a class="footer-link" href="#">For Business</a></li>
-                <li><a class="footer-link" href="#">Cooking partners</a></li>
-                <li><a class="footer-link" href="#">Careers</a></li>
-            </ul>
-        </nav>-->
-        
-        <!-- FOOTER OLD
-        <footer class="footer">
-            <div class="footer__logo-box">
-                <picture class="footer__logo">
-                    art direction - it serves different images depending on the media query
-                    <source
-                    srcset="
-                    img/logo-green-small-1x.png 1x,
-                    img/logo-green-small-2x.png 2x
-                    "
-                    media="(max-width: 37.5em)"
-                    />
-                    
-                    density switching - is serves the same image with different resolution
-                    <img
-                    srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
-                    alt="Full logo"
-                    class="footer__logo"
-                    src="img/logo-green-2x.png"
-                    />
-                </picture>
-            </div>
-            <div class="row">
-                <div class="col-1-of-2">
-                    <div class="footer__navigation">
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Company</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Contact us</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Carriers</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Privacy policy</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Terms</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-1-of-2">
-                    <p class="footer__copyright">
-                        Build by <a href="#" class="footer__link">Matteo Calderaro</a> for
-                        his portfolio
-                    </p>
-                </div>
-            </div>
-        </footer>
-        -->
-        
-        <!-- MORE FEATURES
-        <div class="feature">
-            <svg class="feature__icon">
-                <use xlink:href="img/sprite.svg#icon-map-pin"></use>
-            </svg>
-            <h4 class="heading-4 heading-4--dark">vicino a casa</h4>
-            <p class="feature__test">
-                Tenetur distinctio necessitatibus pariatur voluptatibus quidem
-                consequatur harum.
-            </p>
-        </div>
-        <div class="feature">
-            <svg class="feature__icon">
-                <use xlink:href="img/sprite.svg#icon-clock"></use>
-            </svg>
-            <h4 class="heading-4 heading-4--dark">Top 1% realtors</h4>
-            <p class="feature__test">
-                Quidem consequatur harum, voluptatum mollitia quae. Tenetur distinctio
-                necessitatibus pariatur voluptatibus.
-            </p>
-        </div>
-        <div class="feature">
-            <svg class="feature__icon">
-                <use xlink:href="img/sprite.svg#icon-lock"></use>
-            </svg>
-            <h4 class="heading-4 heading-4--dark">Secure payments on nexter</h4>
-            <p class="feature__test">
-                Pariatur voluptatibus quidem consequatur harum, voluptatum mollitia
-                quae.
-            </p>
-        </div>
-        -->
-        
-        <!-- POPUP
-        <div class="popup" id="popup">
-            <div class="popup__content">
-                <div class="popup__left">
-                    <img
-                    srcset="img/nat-8.jpg 500w, img/nat-8-large.jpg 1000w"
-                    sizes="(max-width:56.25em) 38vw, (max-width:37.5em) 55vw, 425px"
-                    alt="Tour photo"
-                    class="popup__img"
-                    src="img/nat-8-large.jpg"
-                    />
-                    <img
-                    srcset="img/nat-9.jpg 500w, img/nat-9.jpg 1000w"
-                    sizes="(max-width:56.25em) 38vw, (max-width:37.5em) 55vw, 425px"
-                    alt="Tour photo"
-                    class="popup__img"
-                    src="img/nat-9.jpg"
-                    />
-                </div>
-                <div class="popup__right">
-                    <a href="#section-tours" class="popup__close">&times;</a>
-                    <h2 class="heading-secondary u-margin-bottom-small">
-                        Start booking now
-                    </h2>
-                    <h3 class="heading-tertiary u-margin-bottom-small">
-                        Important &ndash; Please read these therms before booking
-                    </h3>
-                    <p class="popup__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Diam
-                        volutpat commodo sed egestas egestas. Ultricies tristique nulla
-                        aliquet enim tortor at auctor urna nunc. Turpis massa tincidunt dui
-                        ut ornare lectus sit amet. Auctor neque vitae tempus quam. Imperdiet
-                        sed euismod nisi porta lorem mollis. Sed tempus urna et pharetra
-                        pharetra massa massa. Purus faucibus ornare suspendisse sed nisi
-                        lacus sed. Viverra justo nec ultrices dui sapien.
-                    </p>
-                    <a href="#section-tours" class="btn btn--green">Book now</a>
-                </div>
-            </div>
-        </div>
-        -->
-        
-        <!--
-        <section class="grid-test">
-            <div class="row">
-                <div class="col-1-of-2">col-1-of-2</div>
-                <div class="col-1-of-2">col-1-of-2</div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-3">col-1-of-3</div>
-                <div class="col-1-of-3">col-1-of-3</div>
-                <div class="col-1-of-3">col-1-of-3</div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-3">col-1-of-3</div>
-                <div class="col-2-of-3">col-2-of-3</div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">col-1-of-4</div>
-                <div class="col-1-of-4">col-1-of-4</div>
-                <div class="col-1-of-4">col-1-of-4</div>
-                <div class="col-1-of-4">col-1-of-4</div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">col-1-of-4</div>
-                <div class="col-1-of-4">col-1-of-4</div>
-                <div class="col-2-of-4">col-2-of-4</div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">col-1-of-4</div>
-                <div class="col-3-of-4">col-3-of-4</div>
-            </div>
-        </section>
-        -->
-        
+    <!-- Bootstrap JS (Bundle includes Popper) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
-        <!-- Bootstrap JS (Bundle includes Popper) -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-        
-        <!-- Glide.js JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js"></script>
-        
-        <!-- Initialize Glide and load data -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-            // Fetch carousel data from JSON file
-            fetch('carousel.json')
-                .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-                })
-                .then(data => {
-                // Get carousel slides container
-                const slidesContainer = document.getElementById('carousel-slides');
-                const bulletsContainer = document.getElementById('carousel-bullets');
-                
-                // Clear any existing content
-                slidesContainer.innerHTML = '';
-                bulletsContainer.innerHTML = '';
-                
-                // Generate slides from JSON data
-                data.forEach((item, index) => {
-                    // Create slide
-                    const slide = document.createElement('li');
-                    slide.className = 'glide__slide';
-                    
-                    // Create card structure
-                    slide.innerHTML = `
-                    <div class="card">
-                        <div class="card-img">
-                        <img src="img/${item.img}" alt="${item.title}">
-                        </div>
-                        <div class="card-body">
-                        <h2 class="card-title">${item.title}</h2>
-                        <p class="card-text feature__test">${item.text}</p>
-                        </div>
-                    </div>
-                    `;
-                    
-                    // Add slide to container
-                    slidesContainer.appendChild(slide);
-                    
-                    // Create bullet
-                    const bullet = document.createElement('button');
-                    bullet.className = 'glide__bullet';
-                    bullet.setAttribute('data-glide-dir', `=${index}`);
-                    
-                    // Add bullet to container
-                    bulletsContainer.appendChild(bullet);
-                });
-                
-                // Initialize Glide.js after slides are added
-                var glide = new Glide('.glide', {
-                    type: 'carousel',
-                    perView: 3,
-                    gap: 0, // Using padding instead of gap for better control
-                    autoplay: 3000,
-                    hoverpause: true,
-                    bound: true,
-                    rewind: false,
-                    peek: 0,
-                    breakpoints: {
-                    992: {
-                        perView: 2
-                    },
-                    576: {
-                        perView: 1
-                    }
-                    }
-                }).mount();
-                })
-                .catch(error => {
-                console.error('Error fetching carousel data:', error);
-                document.getElementById('carousel-slides').innerHTML = '<li class="glide__slide"><div class="card"><div class="card-body"><h5 class="card-title">Error</h5><p class="card-text">Failed to load carousel data</p></div></div></li>';
-                });
-            });
-        </script>
+    <!-- Glide.js JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.5.0/glide.min.js"></script>
+    
+    <!-- JustifiedGallery JS -->
+    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js"></script>
+    
+    <!-- LightGallery JS -->
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/fullscreen/lg-fullscreen.min.js"></script>
+
+    <!-- Initialize Glide and load data-->
+    <script src="media.js"></script>
     </body>
 </html>
     
