@@ -65,7 +65,8 @@ Base + typography > general layout + grid > page layout > components
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden; }
+  /* overflow-x: hidden;  */
+}
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -635,7 +636,9 @@ body {
     filter: blur(3px) brightness(80%); }
 
 .footer {
-  padding: 12.8rem 1rem; }
+  padding: 12.8rem 1rem;
+  background-color: white;
+}
 
 .grid--footer {
   background-color: white;

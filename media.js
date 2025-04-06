@@ -40,13 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Create card structure
             slide.innerHTML = `
-                <div class="card" data-id="${item.id}">
+                <div class="card" data-id="${item.id}" style="color:inherit;">
                     <div class="card-img">
                         <img src="img/${item.img}" alt="${item.title}">
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">${item.title}</h5>
-                        <p class="card-text">${item.text}</p>
+                        <h5 class="card-title heading-4">${item.title}</h5>
+                        <p class="card-text feature__test">${item.text}</p>
                     </div>
                 </div>
             `;
@@ -217,6 +217,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Disable body scrolling to prevent background scrolling
             document.body.style.overflow = 'hidden';
+            document.html.style.overflow = 'hidden';
             
             // Scroll detail page to top
             detailPage.scrollTop = 0;
@@ -236,6 +237,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Re-enable body scrolling
         document.body.style.overflow = '';
+        document.html.style.overflow = '';
         
         // Resume the Glide autoplay if it was paused
         if (glideInstance) {
